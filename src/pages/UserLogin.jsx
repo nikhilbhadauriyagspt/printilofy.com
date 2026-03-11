@@ -67,17 +67,6 @@ export default function UserLogin() {
             </div>
           </div>
 
-          <div className="relative z-10 mt-20">
-            <div className="p-5 bg-white/5 border border-white/10 flex items-center gap-4">
-              <div className="h-12 w-12 bg-white/10 flex items-center justify-center text-[#1447E6]">
-                <ShieldCheck size={20} strokeWidth={2} />
-              </div>
-              <div>
-                <p className="text-[11px] font-bold text-white uppercase tracking-widest">End-to-end secure</p>
-                <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">256-Bit SSL encryption</p>
-              </div>
-            </div>
-          </div>
 
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#1447E6] opacity-10 blur-[100px] rounded-full pointer-events-none" />
         </div>
@@ -153,7 +142,7 @@ export default function UserLogin() {
           <div className="mt-10 pt-8 border-t border-slate-100 text-center">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
               Need a professional account?{' '}
-              <Link to="/signup" className="text-[#1447E6] hover:underline ml-1">Create access</Link>
+              <Link to="/signup" className="text-[#1447E6] hover:underline ml-1">Create account</Link>
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white font-['Heebo'] border-t border-slate-100">
-      
+
       {/* 1. ARCHITECTURAL TOP SECTION */}
       <div className="w-full bg-slate-900 py-16 md:py-20 overflow-hidden relative">
         {/* Abstract Background Elements */}
@@ -45,15 +45,15 @@ export default function Footer() {
 
         <div className="w-full px-4 lg:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-            
+
             {/* Brand Module */}
             <div className="lg:col-span-4 space-y-10">
               <div className="space-y-6">
                 <Link to="/" className="flex items-center gap-2">
-                  <img 
-                    src="/logo/logo.png" 
-                    alt="Printilofy" 
-                    className="h-10 object-contain invert brightness-0 invert" 
+                  <img
+                    src="/logo/logo.png"
+                    alt="Printilofy"
+                    className="h-10 object-contain invert brightness-0 invert"
                   />
                 </Link>
                 <p className="text-slate-400 text-base font-medium leading-relaxed max-w-sm">
@@ -65,12 +65,12 @@ export default function Footer() {
             {/* Links Module */}
             <div className="lg:col-span-8">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
-                
-                {/* Deployment categories */}
+
+                {/* Categories */}
                 <div className="space-y-8">
                   <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em] flex items-center gap-3">
                     <span className="w-6 h-px bg-[#4B4DED]"></span>
-                    Deployment
+                    Categories
                   </h4>
                   <ul className="space-y-4">
                     {categories.map(cat => (
@@ -88,15 +88,15 @@ export default function Footer() {
                 <div className="space-y-8">
                   <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em] flex items-center gap-3">
                     <span className="w-6 h-px bg-[#4B4DED]"></span>
-                    Structure
+                    Quick links
                   </h4>
                   <ul className="space-y-4">
                     {[
-                      { name: "Hardware Catalog", path: "/shop" },
-                      { name: "Our Journey", path: "/about" },
-                      { name: "Help Center", path: "/faq" },
-                      { name: "Contact Unit", path: "/contact" },
-                      { name: "Procurement History", path: "/orders" }
+                      { name: "Shop All", path: "/shop" },
+                      { name: "About Us", path: "/about" },
+                      { name: "FAQs", path: "/faq" },
+                      { name: "Contact Us", path: "/contact" },
+                      { name: "Track Order", path: "/orders" }
                     ].map(link => (
                       <li key={link.name}>
                         <Link to={link.path} className="text-slate-400 hover:text-white transition-colors text-[14px] font-bold flex items-center group">
@@ -112,14 +112,14 @@ export default function Footer() {
                 <div className="space-y-8">
                   <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em] flex items-center gap-3">
                     <span className="w-6 h-px bg-[#4B4DED]"></span>
-                    Compliance
+                    Legal
                   </h4>
                   <ul className="space-y-4">
                     {[
-                      { name: "Privacy Protocol", path: "/privacy-policy" },
-                      { name: "Terms of Service", path: "/terms-and-conditions" },
-                      { name: "Shipping Logic", path: "/shipping-policy" },
-                      { name: "Return Warranty", path: "/return-policy" },
+                      { name: "Privacy Policy", path: "/privacy-policy" },
+                      { name: "Terms & Conditions", path: "/terms-and-conditions" },
+                      { name: "Shipping Policy", path: "/shipping-policy" },
+                      { name: "Return Policy", path: "/return-policy" },
                       { name: "Cookie Policy", path: "/cookie-policy" }
                     ].map(link => (
                       <li key={link.name}>
@@ -143,25 +143,25 @@ export default function Footer() {
         <div className="w-full px-4 lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
-               <div className="flex items-center gap-5 group cursor-default">
-                  <div className="h-14 w-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center text-[#4B4DED] group-hover:bg-[#4B4DED] group-hover:text-white transition-all duration-500">
-                    <Mail size={24} />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Inquiry Protocol</p>
-                    <p className="text-lg font-black text-slate-900 tracking-tight">info@printilofy.com</p>
-                  </div>
-               </div>
+              <div className="flex items-center gap-5 group cursor-default">
+                <div className="h-14 w-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center text-[#4B4DED] group-hover:bg-[#4B4DED] group-hover:text-white transition-all duration-500">
+                  <Mail size={24} />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Email Us</p>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">info@printilofy.com</p>
+                </div>
+              </div>
 
-               <div className="flex items-center gap-5 group cursor-default">
-                  <div className="h-14 w-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center text-[#4B4DED] group-hover:bg-[#4B4DED] group-hover:text-white transition-all duration-500">
-                    <MapPin size={24} />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Logistics Unit</p>
-                    <p className="text-lg font-black text-slate-900 tracking-tight">Little Rock, AR 72207</p>
-                  </div>
-               </div>
+              <div className="flex items-center gap-5 group cursor-default">
+                <div className="h-14 w-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center text-[#4B4DED] group-hover:bg-[#4B4DED] group-hover:text-white transition-all duration-500">
+                  <MapPin size={24} />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Our Address</p>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">MM, 1614 Gervais St, Columbia, SC 29201, USA</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -172,26 +172,15 @@ export default function Footer() {
         <div className="w-full px-4 lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-[13px] font-bold text-slate-400 uppercase tracking-tight">
-              &copy; {new Date().getFullYear()} <span className="text-slate-900">Printilofy LLC.</span> All assets synchronized.
+              &copy; {new Date().getFullYear()} <span className="text-slate-900">Printilofy LLC.</span> All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-4 border-r border-slate-100 pr-8">
-                 <img src="/logo/PayPal.svg.webp" alt="PayPal" className="h-5 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-                 <div className="flex items-center gap-2 opacity-40">
-                    <div className="h-6 w-10 bg-slate-200 rounded-md"></div>
-                    <div className="h-6 w-10 bg-slate-200 rounded-md"></div>
-                 </div>
+                <img src="/logo/PayPal.svg.webp" alt="PayPal" className="h-5 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+
               </div>
-              <div className="flex items-center gap-2.5 text-emerald-600">
-                <ShieldCheck size={18} /> <span className="text-[11px] font-black uppercase tracking-widest">PCI Synchronized</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-blue-600">
-                <Globe size={18} /> <span className="text-[11px] font-black uppercase tracking-widest">US Regional Unit</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-amber-500">
-                <Zap size={18} /> <span className="text-[11px] font-black uppercase tracking-widest">Encrypted Stream</span>
-              </div>
+
             </div>
           </div>
         </div>
