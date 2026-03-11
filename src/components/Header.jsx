@@ -86,12 +86,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="hidden xl:flex items-center gap-1 text-[13px]">
-            <span>Super sale up to 20% in this holiday</span>
-            <Link to="/shop" className="underline hover:text-[#4B4DED]">
-              Shop Now!
-            </Link>
-          </div>
+
 
           <div className="flex items-center gap-5">
 
